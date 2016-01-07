@@ -14,15 +14,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var totalLabel: UILabel!
     
+    @IBOutlet weak var tipControl: UISegmentedControl!
+    
     @IBAction func onEditingChanged(sender: AnyObject) {
-        let billAmount = Double(billField.text!)
+        let tipPercentages = [0.18, 0.2, 0.22]
+        
+        let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
+        
+        let billAmount = Double(billField.text!) ?? 0.0
 
-        if let billAmount = billAmount {
-            tipLabel.text = formatCurrency(billAmount)
-            totalLabel.text = formatCurrency(billAmount)
-        }
+        let tipAmount = billAmount*tipPercentage
+        let totalAmount = billAmount + tipAmount
+    
+        tipLabel.text = formatCurrency(tipAmount)
+        totalLabel.text = formatCurrency(totalAmount)
+
     }
     
+    @IBAction func onTap(sender: AnyObject) {
+        view.endEditing(true)
+        print("tapped")        
+    }
+
     func formatCurrency(val: Double) -> String{
         return String(format: "$%.2f", val)
     }
