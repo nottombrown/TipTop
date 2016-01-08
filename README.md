@@ -13,3 +13,6 @@ Completed:
 - [ ] Optional: Remembering the bill amount across app restarts (if <10mins)
 - [ ] Optional: Using locale-specific currency and currency thousands separators.
 - [x] Optional: Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+
+
+![tiptop gif](https://cloud.githubusercontent.com/assets/306655/12187540/9645dd3e-b561-11e5-904b-77705d679820.gif)
