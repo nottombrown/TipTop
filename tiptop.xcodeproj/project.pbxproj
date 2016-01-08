@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82059D501C3F3C2D00526973 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82059D4F1C3F3C2D00526973 /* SettingsViewController.swift */; };
 		828AF0601C338DAD00907A8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828AF05F1C338DAD00907A8A /* AppDelegate.swift */; };
 		828AF0621C338DAD00907A8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828AF0611C338DAD00907A8A /* ViewController.swift */; };
 		828AF0651C338DAD00907A8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 828AF0631C338DAD00907A8A /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		82059D4F1C3F3C2D00526973 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		828AF05C1C338DAD00907A8A /* tiptop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tiptop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		828AF05F1C338DAD00907A8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		828AF0611C338DAD00907A8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,12 +76,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		82059D4C1C3F361300526973 /* New Group */ = {
+		82059D4E1C3F3C0A00526973 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				828AF0631C338DAD00907A8A /* Main.storyboard */,
+				82059D4F1C3F3C2D00526973 /* SettingsViewController.swift */,
+				828AF0611C338DAD00907A8A /* ViewController.swift */,
 			);
-			name = "New Group";
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		828AF0531C338DAD00907A8A = {
@@ -105,9 +108,9 @@
 		828AF05E1C338DAD00907A8A /* tiptop */ = {
 			isa = PBXGroup;
 			children = (
+				828AF0631C338DAD00907A8A /* Main.storyboard */,
 				828AF05F1C338DAD00907A8A /* AppDelegate.swift */,
-				828AF0611C338DAD00907A8A /* ViewController.swift */,
-				82059D4C1C3F361300526973 /* New Group */,
+				82059D4E1C3F3C0A00526973 /* ViewControllers */,
 				828AF0661C338DAD00907A8A /* Assets.xcassets */,
 				828AF0681C338DAD00907A8A /* LaunchScreen.storyboard */,
 				828AF06B1C338DAD00907A8A /* Info.plist */,
@@ -266,6 +269,7 @@
 			files = (
 				828AF0621C338DAD00907A8A /* ViewController.swift in Sources */,
 				828AF0601C338DAD00907A8A /* AppDelegate.swift in Sources */,
+				82059D501C3F3C2D00526973 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

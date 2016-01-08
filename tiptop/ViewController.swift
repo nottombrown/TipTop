@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let tipPercentages = [0.18, 0.2, 0.22]
     
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
@@ -17,8 +18,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipControl: UISegmentedControl!
     
     @IBAction func onEditingChanged(sender: AnyObject) {
-        let tipPercentages = [0.18, 0.2, 0.22]
-        
         let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         
         let billAmount = Double(billField.text!) ?? 0.0
@@ -33,6 +32,14 @@ class ViewController: UIViewController {
     
     func formatCurrency(val: Double) -> String{
         return String(format: "$%.2f", val)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let defaultTipAmount = defaults.doubleForKey("default_tip_percentage")
+        tipControl.selectedSegmentIndex = tipPercentages.indexOf(defaultTipAmount) ?? 0
     }
     
     override func viewDidLoad() {
