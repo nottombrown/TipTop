@@ -31,17 +31,14 @@ class ViewController: UIViewController {
 
     }
     
-    @IBAction func onTap(sender: AnyObject) {
-        view.endEditing(true)
-        print("tapped")        
-    }
-
     func formatCurrency(val: Double) -> String{
         return String(format: "$%.2f", val)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        onEditingChanged(self)
+        billField.becomeFirstResponder()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

@@ -74,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82059D4C1C3F361300526973 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				828AF0631C338DAD00907A8A /* Main.storyboard */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		828AF0531C338DAD00907A8A = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +107,7 @@
 			children = (
 				828AF05F1C338DAD00907A8A /* AppDelegate.swift */,
 				828AF0611C338DAD00907A8A /* ViewController.swift */,
-				828AF0631C338DAD00907A8A /* Main.storyboard */,
+				82059D4C1C3F361300526973 /* New Group */,
 				828AF0661C338DAD00907A8A /* Assets.xcassets */,
 				828AF0681C338DAD00907A8A /* LaunchScreen.storyboard */,
 				828AF06B1C338DAD00907A8A /* Info.plist */,
@@ -484,6 +492,7 @@
 				828AF0861C338DAD00907A8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		828AF0871C338DAD00907A8A /* Build configuration list for PBXNativeTarget "tiptopTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +501,7 @@
 				828AF0891C338DAD00907A8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		828AF08A1C338DAD00907A8A /* Build configuration list for PBXNativeTarget "tiptopUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +510,7 @@
 				828AF08C1C338DAD00907A8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
